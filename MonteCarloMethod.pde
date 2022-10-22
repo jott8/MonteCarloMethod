@@ -1,6 +1,6 @@
 PVector pMid;
 double counterInner = 0;
-float totalCounter = 0;
+double totalCounter = 0;
 boolean isRunning = false;
 int n = 10000;
 double pie = -1;
@@ -48,7 +48,7 @@ void keyPressed() {
         println("totalCounter: " + totalCounter + " | approx: " + pie);
     }
 
-    // clear points
+    // clear all points with c
     if(!isRunning && key == 'c' || key == 'C') {
         surface.setTitle("MonteCarloMethod");
         pie = -1;
